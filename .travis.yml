@@ -3,6 +3,8 @@ python:
  - "3.6"
 cache: pip
 before_install:
+ - sudo add-apt-repository --yes ppa:js-reynaud/kicad-5.1
+ - sudo apt update 
  - sudo apt-get install kicad kicad-symbols kicad-templates kicad-footprints kicad-packages3d
 install:
  - pip install skidl

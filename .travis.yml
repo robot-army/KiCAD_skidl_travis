@@ -3,7 +3,7 @@ python:
  - "3.6"
 cache: pip
 before_install:
- - sudo apt-get install kicad kicad-libraries
+ - sudo apt-get install kicad kicad-symbols kicad-templates kicad-footprints kicad-packages3d
 install:
  - pip install skidl
 script: 

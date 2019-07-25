@@ -10,5 +10,6 @@ before_install:
  - sudo apt-get install kicad kicad-symbols kicad-templates kicad-footprints kicad-packages3d
 install:
  - pip install skidl
+ - export KICAD_SYMBOL_DIR="/usr/share/kicad/library"
 script: 
  - python KiCAD_skidl_travis.py
